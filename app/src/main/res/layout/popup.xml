@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+
+
+    >
+    <ImageView
+
+        android:scaleType="fitXY"
+        android:src="@drawable/popupdialog"
+        android:id="@+id/imgRandom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+
+        android:background="#73000000"
+        android:scaleType="fitXY"
+          android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WE PROVIDE THE BEST SOFTWARE SOLUTION"/>
+     <TextView
+         android:id="@+id/closepopup"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:textColor="@android:color/white"
+         android:text="X"
+
+         android:layout_alignParentRight="true"
+         android:background="@drawable/redoval"
+         android:layout_width="30dp"
+         android:layout_height="30dp"/>
+
+    <Button
+
+        android:id="@+id/goweb"
+         android:layout_margin="30dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+         android:textSize="18dp"
+        android:text="Visit Our Website"
+       android:gravity="center"
+         android:background="@drawable/buttonshape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

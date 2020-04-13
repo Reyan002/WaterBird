@@ -1,0 +1,2 @@
+rootProject.name='Water Bird'
+include ':app'

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+
+        android:fontFamily="@font/roboto"
+        android:textColor="@android:color/white"
+        android:id="@+id/lblListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customAttribute="http://schemas.android.com/apk/res-auto"
+    tools:context=".TestFragments.DateAndTimeFragment">
+
+    <!--    <androidx.appcompat.widget.AppCompatSeekBar-->
+
+
+    <!--          style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+    <!--         android:id="@+id/seekBar1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="78dp"-->
+    <!--        android:progress="1"-->
+    <!--        android:max="5"-->
+    <!--        android:clickable="false"-->
+    <!--       />-->
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/companyName"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="Chemical Used"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:layout_below="@id/companyName"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progress="5"
+        android:max="5"
+        android:progressDrawable="@drawable/selector_seekbar"
+        android:thumbTint="@color/colorPrimary" />
+
+    <LinearLayout
+
+        android:id="@+id/llcu"
+        android:layout_below="@+id/seekbar"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+android:textSize="16sp"
+
+
+            android:maxLines="1"
+            android:inputType="textAutoComplete"
+
+            android:id="@+id/pname"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backtext"
+            android:hint="Product Name"
+            android:fontFamily="@font/roboto"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textSize="16sp"
+
+            android:maxLines="1"
+            android:inputType="textAutoComplete"
+
+            android:id="@+id/pdosage"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backtext"
+            android:hint="Present Dosage"
+            android:fontFamily="@font/roboto"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textSize="16sp"
+
+            android:maxLines="1"
+            android:inputType="textAutoComplete"
+
+            android:id="@+id/rdosage"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backtext"
+            android:hint="Revised Dosage"
+            android:fontFamily="@font/roboto"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textSize="16sp"
+
+            android:maxLines="1"
+            android:inputType="textAutoComplete"
+            android:id="@+id/stock"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backtext"
+            android:hint="Stock"
+            android:fontFamily="@font/roboto"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/addcu"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="Add"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+<HorizontalScrollView
+    android:id="@+id/lllll"
+
+    android:layout_below="@id/llcu"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/llll"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="9dp"
+            android:text="Product Name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:textSize="16sp"
+
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Present Dosage"
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="16sp"
+
+            android:padding="9dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Revised Dosage"
+            android:layout_width="150dp"
+
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="16sp"
+
+            android:padding="9dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Stock"
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="16sp"
+
+            android:padding="9dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Action"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/llll"
+        android:layout_marginTop="5dp"
+         android:id="@+id/recyclerrViewChemicalUsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  />
+
+</RelativeLayout>
+</HorizontalScrollView>
+
+    <Button
+       android:padding="5dp"
+       android:textSize="16sp"
+       android:id="@+id/next5"
+       android:background="@drawable/buttonshape"
+       android:layout_margin="20dp"
+
+       android:textColor="@android:color/white"
+       android:text="Finish"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/backCU"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

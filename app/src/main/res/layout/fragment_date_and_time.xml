@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customAttribute="http://schemas.android.com/apk/res-auto"
+    tools:context=".TestFragments.DateAndTimeFragment">
+
+<!--    <androidx.appcompat.widget.AppCompatSeekBar-->
+
+
+<!--          style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+<!--         android:id="@+id/seekBar1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="78dp"-->
+<!--        android:progress="1"-->
+<!--        android:max="5"-->
+<!--        android:clickable="false"-->
+<!--       />-->
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/companyName"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+         android:textColor="@android:color/black"
+        android:text="Date and Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:layout_below="@id/companyName"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:indeterminate="false"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progress="1"
+        android:max="5"
+        android:progressDrawable="@drawable/selector_seekbar"
+        android:thumbTint="@color/colorPrimary" />
+ <LinearLayout
+     android:gravity="center"
+     android:layout_centerInParent="true"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:textColor="@android:color/black"
+         android:textSize="16dp"
+         android:fontFamily="@font/roboto"
+         android:text="Tap the icon below to Select Date and TIme"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <androidx.cardview.widget.CardView
+         android:id="@+id/cardviewDate"
+         android:clickable="true"
+         android:focusable="true"
+         android:layout_marginTop="20dp"
+         android:elevation="20dp"
+         android:layout_width="200dp"
+         android:layout_height="200dp">
+         <ImageView
+             android:layout_margin="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:src="@mipmap/calendar"/>
+     </androidx.cardview.widget.CardView>
+
+
+          <EditText
+              android:visibility="gone"
+
+              android:layout_marginTop="20dp"
+
+              android:background="@color/colorPrimary"
+
+              android:textColorHint="@android:color/white"
+              android:textColor="@android:color/white"
+              android:textAlignment="center"
+              android:id="@+id/edittext"
+               android:padding="10dp"
+              android:textSize="24dp"
+              android:hint="Date"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"/>
+
+
+
+         <EditText
+             android:visibility="gone"
+             android:background="@color/colorPrimary"
+
+
+             android:textColorHint="@android:color/white"
+             android:textColor="@android:color/white"
+               android:padding="10dp"
+             android:textSize="24dp"
+             android:textAlignment="center"
+             android:id="@+id/time"
+             android:layout_marginTop="20dp"
+              android:hint="Time"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.practiceandroid.waterbird">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity android:name=".Activities.TripHistoryActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".Activities.HomeActivity"
+            >
+
+
+        </activity>
+        <activity android:name=".Activities.StartJourneyActivity"
+
+            android:parentActivityName=".Activities.HomeActivity"/>
+        <activity
+            android:name=".Activities.CustomerReviewActivity"
+            android:parentActivityName=".Activities.HomeActivity" />
+        <activity
+            android:name=".Activities.HistoryActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".Activities.HistoryActivity" />
+        <activity
+            android:name=".Activities.ScheduleActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".Activities.HomeActivity" />
+        <activity
+            android:name=".Activities.TestActivity"
+            android:parentActivityName=".Activities.HomeActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Activities.ForgetPasswordActivity" />
+        <activity
+            android:name=".Activities.DashBoardActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".Activities.HomeActivity" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

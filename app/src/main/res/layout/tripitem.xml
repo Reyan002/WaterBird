@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+<LinearLayout
+    android:padding="20dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/datetimetrip"
+            android:text="4/10/2020 10:10 AM"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/statustrip"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/companyNameTrip"
+        android:text="Company name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RatingBar
+
+        android:layout_marginTop="10dp"
+        style="?android:ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:rating="4"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+<!--    <RatingBar-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        style="?android:ratingBarStyleSmall"-->
+<!--        android:isIndicator="false"-->
+<!--        android:rating="4"-->
+<!--        android:stepSize="0.5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+</LinearLayout>
+</androidx.cardview.widget.CardView>

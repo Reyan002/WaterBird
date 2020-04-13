@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/title"
+    android:layout_margin="10dp"
+    android:gravity="center"
+     android:textStyle="bold"
+    android:textSize="16dp"
+    android:textColor="@android:color/black"
+    android:text="Test Title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Test Name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Control Limit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Results"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylclerviewtest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="textAutoComplete"
+                android:hint="Observations (Value)"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/backtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:maxLines="1"
+                android:inputType="textAutoComplete"
+                android:hint="Recommendation (Value)"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/backtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

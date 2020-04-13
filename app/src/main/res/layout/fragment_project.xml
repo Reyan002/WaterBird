@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customAttribute="http://schemas.android.com/apk/res-auto"
+    tools:context=".TestFragments.DateAndTimeFragment">
+
+<TextView
+
+    android:id="@+id/project_select"
+    android:padding="10dp"
+    android:text="Select Project"
+    android:textSize="16dp"
+    android:layout_below="@id/seekbar"
+    android:background="@drawable/backtext"
+    android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll"
+        android:layout_below="@+id/project_select"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:text="System Details"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+             android:textColor="@android:color/black"
+             android:text="ANALYSIS OF WATER-LAB"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/companyName"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="Project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <SeekBar
+        android:layout_below="@id/companyName"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progress="2"
+        android:max="5"
+        android:progressDrawable="@drawable/selector_seekbar"
+        android:thumbTint="@color/colorPrimary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/next2"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+         android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

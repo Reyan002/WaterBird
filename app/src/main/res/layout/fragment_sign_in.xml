@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <VideoView
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/vedio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="14dp"
+
+        android:layout_below="@+id/header_icon"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+         android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:text="ONE WINDOW WATER TREATMENT CHEMICAL SOLUTION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/header_icon"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/wedes" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:fontFamily="@font/roboto"
+
+
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                app:backgroundTint="#ffffff"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:id="@+id/username_edit_text"
+                style="@style/RegistrationEditTextStyle"
+                android:layout_gravity="center_horizontal"
+
+
+                android:hint="Username" />
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:textSize="24dp"
+                android:fontFamily="@font/roboto"
+                app:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:id="@+id/password_edit_text"
+                style="@style/RegistrationEditTextStyle"
+                android:layout_gravity="center_horizontal"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+
+
+
+                android:id="@+id/btnSignin"
+                android:fontFamily="@font/roboto"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/buttonshape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/login_button_margin"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+
+                android:text="Log in"/>
+
+            <TextView
+                android:id="@+id/forget"
+
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:text="Forget Password"
+                android:fontFamily="@font/roboto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+<!--            <ProgressBar-->
+
+<!--                android:id="@+id/four"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:indeterminateDrawable="@drawable/fourth"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_width="100dp">-->
+
+<!--            </ProgressBar>-->
+
+            <!--            <TextView-->
+
+
+            <!--                android:textColor="@android:color/white"-->
+            <!--                android:textSize="24dp"-->
+            <!--                android:layout_margin="20dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="OR"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"/>-->
+
+            <!--            <Button-->
+            <!--                 android:textAllCaps="false"-->
+            <!--                android:fontFamily="sans-serif-smallcaps"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                 android:background="@drawable/buttonshape"-->
+            <!--                android:text="Register"-->
+            <!--                android:textColor="@android:color/white"-->
+
+            <!--                android:textSize="18dp" />-->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="12dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:text="Water Bird Water Treatment Chemicals L.L.C."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

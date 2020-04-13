@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customAttribute="http://schemas.android.com/apk/res-auto"
+    tools:context=".TestFragments.DateAndTimeFragment">
+
+    <!--    <androidx.appcompat.widget.AppCompatSeekBar-->
+
+
+    <!--          style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+    <!--         android:id="@+id/seekBar1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="65dp"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="78dp"-->
+    <!--        android:progress="1"-->
+    <!--        android:max="5"-->
+    <!--        android:clickable="false"-->
+    <!--       />-->
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/companyName"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="Test Sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:id="@+id/loc_select"
+        android:padding="10dp"
+        android:text="Select Location"
+        android:textSize="16dp"
+        android:layout_below="@id/seekbar"
+        android:background="@drawable/backtext"
+        android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+        android:visibility="gone"
+        android:id="@+id/test_sample_select"
+        android:padding="10dp"
+        android:text="Select Test Sample"
+        android:textSize="16dp"
+        android:layout_below="@id/loc_select"
+        android:background="@drawable/backtext"
+        android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:layout_below="@id/test_sample_select"
+        android:id="@+id/test_sample_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <SeekBar
+        android:layout_below="@id/companyName"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progress="4"
+        android:max="5"
+        android:progressDrawable="@drawable/selector_seekbar"
+        android:thumbTint="@color/colorPrimary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/next4"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/backTest"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

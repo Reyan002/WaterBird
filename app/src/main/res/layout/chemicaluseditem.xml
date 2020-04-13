@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/pnametxt"
+            android:textSize="16sp"
+             android:gravity="center"
+             android:text="Product Name"
+
+             android:layout_width="150dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/pdostxt"
+            android:textSize="16sp"
+
+             android:gravity="center"
+             android:text="Present Dosage"
+
+            android:layout_width="150dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/rdostxt"
+            android:textSize="16sp"
+
+             android:gravity="center"
+             android:text="Revised Dosage"
+
+            android:layout_width="150dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/stocktxt"
+            android:layout_width="150dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             android:text="Stock"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/deletecu"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+
+             android:gravity="center"
+             android:text="Action"
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+</HorizontalScrollView>
